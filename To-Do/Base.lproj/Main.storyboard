@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,6 +81,32 @@
                                 <rect key="frame" x="0.0" y="152" width="375" height="515"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="113" id="SZi-8f-6RF" customClass="ViewControllerTableViewCell" customModule="To_Do" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SZi-8f-6RF" id="Hw1-lK-141">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="112.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCr-sY-JPm">
+                                                    <rect key="frame" x="25" y="20.5" width="46.5" height="71.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DCr-sY-JPm" firstAttribute="leading" secondItem="Hw1-lK-141" secondAttribute="leadingMargin" constant="10" id="68k-D2-1wu"/>
+                                                <constraint firstItem="DCr-sY-JPm" firstAttribute="centerY" secondItem="Hw1-lK-141" secondAttribute="centerY" id="7hV-fk-qGu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DCr-sY-JPm" secondAttribute="bottom" constant="10" id="wSz-qy-2qU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalLabel" destination="DCr-sY-JPm" id="TJu-jL-VpC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,6 +118,7 @@
                         <viewLayoutGuide key="safeArea" id="Ies-fY-LMY"/>
                     </view>
                     <connections>
+                        <outlet property="goalTableView" destination="Tae-uq-Kqt" id="hMA-ma-iD3"/>
                         <outlet property="topViewHeight" destination="deW-Zi-P24" id="adn-Tp-ab5"/>
                     </connections>
                 </viewController>
@@ -108,6 +136,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yQu-ic-vuA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bpp-qE-ZP5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTp-ST-ht2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

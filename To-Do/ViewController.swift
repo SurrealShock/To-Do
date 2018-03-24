@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topViewHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        topViewHeight.constant = (self.view.frame.size.height / 4.5) - 10
         // Do any additional setup after loading the view.
     }
 

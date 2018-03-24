@@ -9,11 +9,13 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet weak var topViewHeight: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+         topViewHeight.constant = (self.view.frame.size.height / 4.5) - 10
     }
 
     override func didReceiveMemoryWarning() {

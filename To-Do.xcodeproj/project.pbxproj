@@ -17,6 +17,7 @@
 		2065C4E22066F15F00D3983E /* To_DoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065C4E12066F15F00D3983E /* To_DoTests.swift */; };
 		2065C4ED2066F15F00D3983E /* To_DoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065C4EC2066F15F00D3983E /* To_DoUITests.swift */; };
 		CD7EAC65206714C800C25504 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EAC64206714C800C25504 /* ViewControllerTableViewCell.swift */; };
+		CD7EAC6720671CD400C25504 /* SpecificGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EAC6620671CD400C25504 /* SpecificGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2065C4EC2066F15F00D3983E /* To_DoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_DoUITests.swift; sourceTree = "<group>"; };
 		2065C4EE2066F15F00D3983E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD7EAC64206714C800C25504 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CD7EAC6620671CD400C25504 /* SpecificGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificGoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		CD7EAC622067145B00C25504 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CD7EAC6620671CD400C25504 /* SpecificGoalViewController.swift */,
 				2018DAD72067009B00D3BB59 /* DetailViewController.swift */,
 				2018DAD9206700E200D3BB59 /* EditViewController.swift */,
 				2018DAD52066FF9A00D3BB59 /* ViewController.swift */,
@@ -286,6 +289,7 @@
 			files = (
 				2018DADA206700E200D3BB59 /* EditViewController.swift in Sources */,
 				2018DAD82067009B00D3BB59 /* DetailViewController.swift in Sources */,
+				CD7EAC6720671CD400C25504 /* SpecificGoalViewController.swift in Sources */,
 				CD7EAC65206714C800C25504 /* ViewControllerTableViewCell.swift in Sources */,
 				2018DAD62066FF9A00D3BB59 /* ViewController.swift in Sources */,
 				2065C4CD2066F15F00D3983E /* AppDelegate.swift in Sources */,

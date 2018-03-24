@@ -47,8 +47,8 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedIndex = indexPath.row
-        performSegue(withIdentifier: <#T##String#>, sender: self)
+//       let selectedIndex = indexPath.row
+        performSegue(withIdentifier: "goToSpecific", sender: self)
     }
 
   

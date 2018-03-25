@@ -31,7 +31,6 @@ class EditViewController: UIViewController, UITextFieldDelegate {
         for i in 0 ... goalTitleArray.count - 1 {
             print(goalTitleArray[i])
         }
-        // Do any additional setup after loading the view.
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

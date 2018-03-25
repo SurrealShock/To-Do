@@ -16,6 +16,8 @@
 		2065C4D72066F15F00D3983E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2065C4D52066F15F00D3983E /* LaunchScreen.storyboard */; };
 		2065C4E22066F15F00D3983E /* To_DoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065C4E12066F15F00D3983E /* To_DoTests.swift */; };
 		2065C4ED2066F15F00D3983E /* To_DoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2065C4EC2066F15F00D3983E /* To_DoUITests.swift */; };
+		CD7EAC65206714C800C25504 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EAC64206714C800C25504 /* ViewControllerTableViewCell.swift */; };
+		CD7EAC6720671CD400C25504 /* SpecificGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7EAC6620671CD400C25504 /* SpecificGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2065C4E82066F15F00D3983E /* To-DoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To-DoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2065C4EC2066F15F00D3983E /* To_DoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_DoUITests.swift; sourceTree = "<group>"; };
 		2065C4EE2066F15F00D3983E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7EAC64206714C800C25504 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		CD7EAC6620671CD400C25504 /* SpecificGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificGoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				2065C4CC2066F15F00D3983E /* AppDelegate.swift */,
-				2018DAD52066FF9A00D3BB59 /* ViewController.swift */,
+				CD7EAC622067145B00C25504 /* View Controllers */,
 				2065C4D02066F15F00D3983E /* Main.storyboard */,
-				2018DAD9206700E200D3BB59 /* EditViewController.swift */,
-				2018DAD72067009B00D3BB59 /* DetailViewController.swift */,
+				CD7EAC632067147200C25504 /* Table View Cell */,
 				2065C4D32066F15F00D3983E /* Assets.xcassets */,
 				2065C4D52066F15F00D3983E /* LaunchScreen.storyboard */,
 				2065C4D82066F15F00D3983E /* Info.plist */,
@@ -129,6 +132,25 @@
 				2065C4EE2066F15F00D3983E /* Info.plist */,
 			);
 			path = "To-DoUITests";
+			sourceTree = "<group>";
+		};
+		CD7EAC622067145B00C25504 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD7EAC6620671CD400C25504 /* SpecificGoalViewController.swift */,
+				2018DAD72067009B00D3BB59 /* DetailViewController.swift */,
+				2018DAD9206700E200D3BB59 /* EditViewController.swift */,
+				2018DAD52066FF9A00D3BB59 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CD7EAC632067147200C25504 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD7EAC64206714C800C25504 /* ViewControllerTableViewCell.swift */,
+			);
+			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +289,8 @@
 			files = (
 				2018DADA206700E200D3BB59 /* EditViewController.swift in Sources */,
 				2018DAD82067009B00D3BB59 /* DetailViewController.swift in Sources */,
+				CD7EAC6720671CD400C25504 /* SpecificGoalViewController.swift in Sources */,
+				CD7EAC65206714C800C25504 /* ViewControllerTableViewCell.swift in Sources */,
 				2018DAD62066FF9A00D3BB59 /* ViewController.swift in Sources */,
 				2065C4CD2066F15F00D3983E /* AppDelegate.swift in Sources */,
 			);

@@ -1,21 +1,19 @@
 //
-//  DetailViewController.swift
+//  SpecificGoalViewController.swift
 //  To-Do
 //
-//  Created by Adrian Avram on 3/24/18.
+//  Created by KarsickKeep on 3/24/18.
 //  Copyright © 2018 OverLakeside. All rights reserved.
 //
 
 import UIKit
 
-class DetailViewController: UIViewController {
-    @IBOutlet weak var topViewHeight: NSLayoutConstraint!
-    
+class SpecificGoalViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-         topViewHeight.constant = (self.view.frame.size.height / 4.5) - 10
     }
 
     override func didReceiveMemoryWarning() {

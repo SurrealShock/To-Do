@@ -14,7 +14,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var topViewHeight: NSLayoutConstraint!
     @IBOutlet weak var goalTableView: UITableView!
     
-    var listGoals = ["hello", "alan", "is", "gay"]
+    var listGoals = ["hello", "alan", "is", "good"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

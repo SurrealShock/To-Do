@@ -10,14 +10,27 @@ import UIKit
 
 class EditViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var eventField: UITextField!
     @IBOutlet weak var goalTitle: UITextField!
     @IBOutlet weak var topViewHeight: NSLayoutConstraint!
+    
+    var goalTitleArray = [String]()
+    var goalDescriptionArray = [String]()
+    let userData = UserData()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.eventField.delegate = self
         self.goalTitle.delegate = self
         topViewHeight.constant = (self.view.frame.size.height / 4.5) - 10
 
+        goalTitleArray = userData.getUserData(key: "goalTitle") as! [String]
+        goalDescriptionArray = userData.getUserData(key: "goalDescription") as! [String]
+        
+        for i in 0 ... goalTitleArray.count - 1 {
+            print(goalTitleArray[i])
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -31,8 +44,12 @@ class EditViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func donePressed(_ sender: Any) {
+        goalTitleArray.append(goalTitle.text!)
+        goalDescriptionArray.append(eventField.text!)
+        
+        userData.saveUserData(key: "goalTitle", value: goalTitleArray)
+        userData.saveUserData(key: "goalDescription", value: goalDescriptionArray)
         _ = navigationController?.popToRootViewController(animated: true)
-        print("Pressed")
     }
     
     override func didReceiveMemoryWarning() {

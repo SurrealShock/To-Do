@@ -198,7 +198,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-tg-Nua">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Edit Title" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-mf-Gxk">
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Edit Title" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tuQ-mf-Gxk">
                                         <rect key="frame" x="8" y="87" width="351" height="56"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -225,7 +225,7 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Event description" textAlignment="natural" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NSU-NH-pPc">
-                                <rect key="frame" x="4" y="159" width="198" height="32"/>
+                                <rect key="frame" x="8" y="159" width="198" height="32"/>
                                 <color key="textColor" red="0.9344213604927063" green="0.52258127927780151" blue="0.48997771739959717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -235,13 +235,14 @@
                         <constraints>
                             <constraint firstItem="NSU-NH-pPc" firstAttribute="top" secondItem="yjb-tg-Nua" secondAttribute="bottom" constant="8" symbolic="YES" id="Oe3-qr-XAH"/>
                             <constraint firstItem="yjb-tg-Nua" firstAttribute="top" secondItem="fz2-Vo-2rS" secondAttribute="top" id="XfV-dz-2Og"/>
-                            <constraint firstItem="NSU-NH-pPc" firstAttribute="leading" secondItem="yQu-ic-vuA" secondAttribute="leading" constant="4" id="cNJ-9l-GzR"/>
+                            <constraint firstItem="NSU-NH-pPc" firstAttribute="leading" secondItem="yQu-ic-vuA" secondAttribute="leading" constant="8" id="cNJ-9l-GzR"/>
                             <constraint firstItem="yjb-tg-Nua" firstAttribute="trailing" secondItem="yQu-ic-vuA" secondAttribute="trailing" id="hjl-FP-TPt"/>
                             <constraint firstItem="yjb-tg-Nua" firstAttribute="leading" secondItem="yQu-ic-vuA" secondAttribute="leading" id="iad-CS-9bn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yQu-ic-vuA"/>
                     </view>
                     <connections>
+                        <outlet property="eventField" destination="NSU-NH-pPc" id="H9w-br-BfW"/>
                         <outlet property="goalTitle" destination="tuQ-mf-Gxk" id="qGH-fI-NtG"/>
                         <outlet property="topViewHeight" destination="bJD-p2-dsH" id="ocW-Dy-uhC"/>
                     </connections>
